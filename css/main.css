@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    display: grid;
+    grid-template: 
+        "sidebar header" 0.3fr
+        "sidebar main" 5fr
+        / 250px 1fr;
+}
+aside{
+    grid-area: sidebar;
+}
+header{
+    grid-area: header;
+    display: grid;
+    grid-template:
+        "top-header" 75px
+        "below-header" 125px
+
+}
+.top-header{
+    grid-area: top-header;
+    display: grid;
+    grid-template:
+        "th-left th-right" 1fr
+        / 2fr 1fr;
+}
+.top-header > form {
+    grid-area: th-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-header > form > input {
+    width: 80%;
+    margin-left: 1rem;
+}
+.top-header > div {
+    grid-area: th-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;;
+}
+
+.below-header{
+    grid-area: below-header;
+}
+
+main{
+    grid-area: main;
+}
+
+img{
+    color: black;
+}
+aside {
+    background-color: #64748B;
+}
+aside > p {
+    display: flex;
+    align-items: center;
+}
+
+hr{
+    width: 80%;
+}
+.icon-black {
+    filter: invert(100%) sepia(0%) saturate(24%) hue-rotate(114deg) brightness(108%) contrast(108%);
+}
