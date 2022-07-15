@@ -9,23 +9,21 @@
 </head>
 <body>
     <aside>
-        <div>
+        <div class="top-sidebar">
             <h1><img src="./pics/view-dashboard.png">Dashboard</h1>
         </div>
-        <nav>
-            <div>
-                <p><img src="./pics/home.png">Home</p>
-                <p><img src="./pics/card-account-details-outline.png">Profile</p>
-                <p><img src="./pics/message-reply-outline.png">Messages</p>
-                <p><img src="./pics/clock-time-three.png">History</p>
-                <p><img src="./pics/file-multiple-outline.png">Tasks</p>
-                <p><img src="./pics/account-group.png">Communities</p>
-            </div>
-            <div>
-                <p><img src="./pics/cog.png">Settings</p>
-                <p><img src="./pics/face-agent.png">Support</p>
-                <p><img src="./pics/shield-check.png">Privacy</p>
-            </div>
+        <nav class="medium-sidebar">
+            <p><img src="./pics/home.png">Home</p>
+            <p><img src="./pics/card-account-details-outline.png">Profile</p>
+            <p><img src="./pics/message-reply-outline.png">Messages</p>
+            <p><img src="./pics/clock-time-three.png">History</p>
+            <p><img src="./pics/file-multiple-outline.png">Tasks</p>
+            <p><img src="./pics/account-group.png">Communities</p>
+        </nav>
+        <nav class="bottom-sidebar">
+            <p><img src="./pics/cog.png">Settings</p>
+            <p><img src="./pics/face-agent.png">Support</p>
+            <p><img src="./pics/shield-check.png">Privacy</p>
         </nav>
     </aside>
     <header>
@@ -41,88 +39,106 @@
             </div>
         </div>
         <div class="below-header">
-            <img src="./pics/icon-jhon.png">
-            <div>
-                    <p>Hi there,</p>
-                    <p>Jhon Doe (@jdoe)</p>
+            <div class="below-header-left">
+                <img src="./pics/icon-jhon.png">
+                <div>
+                        <p>Hi there,</p>
+                        <p>Jhon Doe (@jdoe)</p>
+                </div>
             </div>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+            <div class="below-header-right">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
     </header>
     <main>
-        <div><p>Your Projects</p></div>
-        <div>
-            <div>
-                <p>Super Cool Project</p>
-                <p>Pellentesque fringilla efficitur mi, 
-                    iaculis maximus justo pulvinar vel. 
-                    Mauris dignissim nec elit ac mollis.</p>
-                <div>
-                    <img src="./pics/star-check-outline.png" class="icon-black">
-                    <img src="./pics/eye-plus-outline.png" class="icon-black">
-                    <img src="./pics/source-fork.png" class="icon-black">
+        <div class="main-left">
+            <div class="main-cards-title"><p>Your Projects</p></div>
+            <div class="main-cards">
+                <div class="card card1">
+                    <div class="card-top">
+                        <p>Super Cool Project</p>
+                        <p>Pellentesque fringilla efficitur mi, 
+                            iaculis maximus justo pulvinar vel. 
+                            Mauris dignissim nec elit ac mollis.</p>
+                    </div>
+                    <div class="card-btn">
+                        <img src="./pics/star-check-outline.png" class="icon-black">
+                        <img src="./pics/eye-plus-outline.png" class="icon-black">
+                        <img src="./pics/source-fork.png" class="icon-black">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p>Less Cool Project</p>
-                <p>Pellentesque fringilla efficitur mi, 
-                    iaculis maximus justo pulvinar vel. 
-                    Mauris dignissim nec elit ac mollis.</p>
-                <div>
-                    <img src="./pics/star-check-outline.png" class="icon-black">
-                    <img src="./pics/eye-plus-outline.png" class="icon-black">
-                    <img src="./pics/source-fork.png" class="icon-black">
+                <div class="card card2">
+                    <div class="card-top">
+                        <p>Less Cool Project</p>
+                        <p>Pellentesque fringilla efficitur mi, 
+                            iaculis maximus justo pulvinar vel. 
+                            Mauris dignissim nec elit ac mollis.</p>
+                    </div>
+                    <div class="card-btn">
+                        <img src="./pics/star-check-outline.png" class="icon-black">
+                        <img src="./pics/eye-plus-outline.png" class="icon-black">
+                        <img src="./pics/source-fork.png" class="icon-black">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p>Impossible App</p>
-                <p>Pellentesque fringilla efficitur mi, 
-                    iaculis maximus justo pulvinar vel. 
-                    Mauris dignissim nec elit ac mollis.</p>
-                <div>
-                    <img src="./pics/star-check-outline.png" class="icon-black">
-                    <img src="./pics/eye-plus-outline.png" class="icon-black">
-                    <img src="./pics/source-fork.png" class="icon-black">
+                <div class="card card3">
+                    <div class="card-top">
+                        <p>Impossible App</p>
+                        <p>Pellentesque fringilla efficitur mi, 
+                            iaculis maximus justo pulvinar vel. 
+                            Mauris dignissim nec elit ac mollis.</p>
+                    </div>
+                    <div class="card-btn">
+                        <img src="./pics/star-check-outline.png" class="icon-black">
+                        <img src="./pics/eye-plus-outline.png" class="icon-black">
+                        <img src="./pics/source-fork.png" class="icon-black">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p>Easy Peasy App</p>
-                <p>Pellentesque fringilla efficitur mi, 
-                    iaculis maximus justo pulvinar vel. 
-                    Mauris dignissim nec elit ac mollis.</p>
-                <div>
-                    <img src="./pics/star-check-outline.png" class="icon-black">
-                    <img src="./pics/eye-plus-outline.png" class="icon-black">
-                    <img src="./pics/source-fork.png" class="icon-black">
+                <div class="card card4">
+                    <div class="card-top">
+                        <p>Easy Peasy App</p>
+                        <p>Pellentesque fringilla efficitur mi, 
+                            iaculis maximus justo pulvinar vel. 
+                            Mauris dignissim nec elit ac mollis.</p>
+                    </div>
+                    <div class="card-btn">
+                        <img src="./pics/star-check-outline.png" class="icon-black">
+                        <img src="./pics/eye-plus-outline.png" class="icon-black">
+                        <img src="./pics/source-fork.png" class="icon-black">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p>Add Blocker</p>
-                <p>Pellentesque fringilla efficitur mi, 
-                    iaculis maximus justo pulvinar vel. 
-                    Mauris dignissim nec elit ac mollis.</p>
-                <div>
-                    <img src="./pics/star-check-outline.png" class="icon-black">
-                    <img src="./pics/eye-plus-outline.png" class="icon-black">
-                    <img src="./pics/source-fork.png" class="icon-black">
+                <div class="card card5">
+                    <div class="card-top">
+                        <p>Add Blocker</p>
+                        <p>Pellentesque fringilla efficitur mi, 
+                            iaculis maximus justo pulvinar vel. 
+                            Mauris dignissim nec elit ac mollis.</p>
+                    </div>
+                    <div class="card-btn">
+                        <img src="./pics/star-check-outline.png" class="icon-black">
+                        <img src="./pics/eye-plus-outline.png" class="icon-black">
+                        <img src="./pics/source-fork.png" class="icon-black">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p>Money Maker</p>
-                <p>Pellentesque fringilla efficitur mi, 
-                    iaculis maximus justo pulvinar vel. 
-                    Mauris dignissim nec elit ac mollis.</p>
-                <div>
-                    <img src="./pics/star-check-outline.png" class="icon-black">
-                    <img src="./pics/eye-plus-outline.png" class="icon-black">
-                    <img src="./pics/source-fork.png" class="icon-black">
+                <div class="card card6">
+                    <div class="card-top">
+                        <p>Money Maker</p>
+                        <p>Pellentesque fringilla efficitur mi, 
+                            iaculis maximus justo pulvinar vel. 
+                            Mauris dignissim nec elit ac mollis.</p>
+                    </div>
+                    <div class="card-btn">
+                        <img src="./pics/star-check-outline.png" class="icon-black">
+                        <img src="./pics/eye-plus-outline.png" class="icon-black">
+                        <img src="./pics/source-fork.png" class="icon-black">
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
+        <div class="main-right">
+            <div class="main-right-top">
                 <h3>Announcements</h3>
                 <div>
                     <h4>Site Maintenance</h4>
@@ -141,7 +157,7 @@
                         maximus risus.</p>
                 </div>
             </div>
-            <div>
+            <div class="main-right-bottom">
                 <h3>Trending</h3>
                 <div>
                     <div>

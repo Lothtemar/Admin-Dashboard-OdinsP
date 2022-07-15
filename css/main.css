@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -6,19 +7,65 @@ body{
     display: grid;
     grid-template: 
         "sidebar header" 0.3fr
-        "sidebar main" 5fr
+        "sidebar main" auto
         / 250px 1fr;
+    height: 100vh;
 }
 aside{
     grid-area: sidebar;
+    display: grid;
+    grid-template: 
+    "top-sidebar" 75px
+    "medium-sidebar" 300px
+    "bottom-sidebar" 1fr
+    / 1fr;
+    padding-top: 1rem;
+    color: white;
+    background-color: #64748B;
+}
+aside > p {
+    display: flex;
+    align-items: center;
+}
+.top-sidebar{
+    grid-area: top-sidebar;
+    padding-left: 1rem;
+
+}
+.top-sidebar > h1 {
+    display: flex;
+    align-items: center; 
+    font-family: 'Orbitron' , sans-serif ;
+}
+.top-sidebar > h1 > img {
+    margin-right: 1rem;
+}
+.medium-sidebar{
+    grid-area: medium-sidebar;
+}
+.bottom-sidebar{
+    grid-area: bottom-sidebar;
+}
+aside > nav > p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    font-family: 'Orbitron' , sans-serif ;
+}
+aside > nav > p > img{
+    margin-right: 1rem;
 }
 header{
     grid-area: header;
     display: grid;
     grid-template:
         "top-header" 75px
-        "below-header" 125px
-
+        "below-header" 75px;
+    background-color: #ffffff;
+}
+header, main {
+    font-family: 'Roboto', sans-serif;
 }
 .top-header{
     grid-area: top-header;
@@ -30,38 +77,132 @@ header{
 .top-header > form {
     grid-area: th-left;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding-left: 2rem;
 }
 .top-header > form > input {
     width: 80%;
     margin-left: 1rem;
+    border-radius: 10rem;
+    background-color: #e2e8f0;
+    border: 0px;
 }
 .top-header > div {
     grid-area: th-right;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    margin-left: 1rem;;
+    padding-right: 1rem;
 }
 
 .below-header{
     grid-area: below-header;
+    display: grid;
+    grid-template:
+        "be-left be-right" 1fr
+        / 2fr 1fr;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24);
+    margin-bottom: 3px;
 }
-
-main{
-    grid-area: main;
-}
-
-img{
-    color: black;
-}
-aside {
-    background-color: #64748B;
-}
-aside > p {
+.below-header-left{
+    grid-area: be-left;
     display: flex;
     align-items: center;
+    padding-left: 2rem;
+    
+}
+.below-header-left > div{
+    display: block;
+}
+.below-header-right{
+    grid-area: be-right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.below-header-right > button {
+    width: 5rem;
+
+}
+main{
+    grid-area: main;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template:
+    "main-left main-right" 1fr
+    / 3fr 1fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+.main-left{
+    grid-area: main-left;
+    display: grid;
+    grid-template: 
+    "main-cards-title" 50px
+    "main-cards" 1fr 
+    / 1fr;
+    padding-right: 1rem;
+}
+.main-left > .main-cards-title {
+    grid-area: main-cards-title;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+}
+.main-left > .main-cards {
+    grid-area: main-cards;
+    display: grid;
+    grid-template:
+    "card1 card2" 1fr
+    "card3 card4" 1fr
+    "card5 card6" 1fr
+    / 1fr 1fr; 
+    gap: 1rem;
+}
+.card1 {
+    grid-area: card1;
+}
+.card2 {
+    grid-area: card2;
+}
+.card3 {
+    grid-area: card3;
+}
+.card4 {
+    grid-area: card4;
+}
+.card5 {
+    grid-area: card5;
+}
+.card6 {
+    grid-area: card6;
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 4px;
+    border-left: 3px solid #efb42b;
+    display: grid;
+    grid-template: 
+    "card-text" 0.9fr
+    "card-buttons" 0.1fr
+    / 1fr;
+}
+.card > .card-top {
+    grid-area: card-text;
+}
+.card > .card-btn {
+    grid-area: card-buttons;
+    display: flex;
+    justify-content: flex-end;
+}
+.card > .card-btn > img {
+    padding-right: 1rem;
+}
+.main-right{
+    grid-area: main-right;
 }
 
 hr{
